@@ -1,0 +1,12 @@
+## Solution
+
+Find a md4 collision:
+
+0x5245ce54, 0xc1ea61f5, 0xef1115ee, 0x9e8fd169,
+0xb46807fa, 0xf1f1f344, 0xe94454cb, 0xe98dd78c,
+0x426092be, 0x96e1de9f, 0xb553dbb0, 0x3e1d7cfe,
+0x7eca6f98, 0xa1f2f7c7, 0xd788bd0c, 0xdaf23a63
+
+The hash value: 0x619619619619619619619619abcd41cf
+
+The flag will be the last 8 characters i.e. abcd41cf  
