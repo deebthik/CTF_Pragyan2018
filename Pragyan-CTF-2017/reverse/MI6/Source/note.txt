@@ -1,3 +1,0 @@
-# Things to be done
-
-Current executable might not protect source. So, have to convert it into a C executable

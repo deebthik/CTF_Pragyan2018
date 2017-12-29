@@ -1,7 +1,0 @@
-At the end of the image some binary code has been appended.
-
-Decrypt it using braille cipher (6 bit binary code).
-
-doordonot is the passphrase for file embedded in image using steghide.
-
-file contains base64 encoded flag.
