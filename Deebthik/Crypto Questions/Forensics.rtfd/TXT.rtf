@@ -1,0 +1,31 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww23180\viewh11100\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs48 \cf0 Forensics Questions:\
+\
+1. Title: Colorful flag\
+\
+You are given two files titled \'91flag.png\'92 and \'91clue.png\'92. Find the flag.\
+\
+Note: The flag is not in the usual format, it is in the follow format: flag\{_<flag>_\}\
+\
+\
+Solution:\
+\
+So there are two files titled \'91flag.png\'92 and \'91clue.png\'92. The file \'91clue.png\'92 contains four words in different colors. These colors have hex values. And these hex values are placed inside \'91flag.png\'92. So when we hexdump them and search for these hex values, we find 8 characters next to it(as in a hex dump we have 16 characters in one row, the first eight for the hex(the first two being 00 00) and next eight characters are part of the flag). So we have four rows having data pointing to the flag. So once we get the 8x4=32 characters, they\'92re just a bunch of random characters, but one can easily find patterns in it, and since we know the flag is in the format of flag\{_<flag>_\}, that leaves out 8 characters, and we find apparent words and so on, so we do not need to permute all the characters.\
+\
+Flag = flag\{_colors_make_life_awesome_\}\
+\
+\
+\
+3. Into the next dimension\
+\
+John receives two files. They both don\'92t have extensions so he\'92s confused as to what files they are. He\'92s been told to find the flag and also that this task would be a transformational experience for him. Help him out.\
+\
+Solution:\
+\
+There are two files and on inspecting them with hexdump, we find out they one of them is a .obj file and the other one is an accompanying .mtl file. We then open the obj file(I personally used Blender, plus since it was created in Blender, it is mentioned so in the hexdump), and find there a text object saying \'93GOOD DAY JOHN\'94. Now, the term transformational experience in the question is a hint pointing to the common transforms applied to any 3D object, translation, rotation and scale. The text \'93GOOD DAY JOHN\'94 are in three different colors, one for each word.}
